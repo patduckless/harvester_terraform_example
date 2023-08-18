@@ -10,8 +10,8 @@ resource "harvester_virtualmachine" "terrafrom-test-vm" {
     ssh-user = "patduckless"
   }
 
-  cpu    = local.terrafrom-test-vm.cpu
-  memory = local.terrafrom-test-vm.memory
+  cpu    = 4
+  memory = "8Gi"
 
   efi         = true
   secure_boot = true
